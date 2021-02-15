@@ -3,6 +3,7 @@ const hbs = require("hbs");
 const path = require("path");
 const getWeather = require("./utilities/weather.js");
 const geoLoc = require("./utilities/geoloc.js");
+const fs = require("fs");
 
 const pathViews = path.join(__dirname, "../templates/views");
 const patialPaths = path.join(__dirname, "../templates/partials");
