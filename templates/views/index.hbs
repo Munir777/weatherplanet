@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/images/weather.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>   
+            {{>header}}
+         
+                        <div class="wrapper">
+                            <div class="top-box">
+                                    <form action="#">
+                                            <div class="form-group">
+                                                <label for="location">Enter Your City</label>
+                                                <input type="text" name="" id="location" class="form-control">
+                                            </div>
+                                            <div class="formg-group">
+                                                <input type="submit" value="SUBMIT" id="submitBtn" class="form-control">
+                                            </div>
+                                    </form>
+                            </div>
+                            <div class="bottom-box">
+                                     <div class="weather">
+                                     <span>
+                                     <div class="cloud">Sky Clear</div>
+                                     </span>
+                                     <span>
+                                     <div class="icon" style="font-size: 30px;">icon</div>
+                                     </span>
+                                     </div>
+                                     <div class="temp">0</div>
+                                     <div class="temp-max">0</div>
+                                     <div class="temp-min">0</div>
+                                     <div class="feels">0</div>
+                                     <div class="humidity">0</div>
+                                     <div class="vis">0</div>
+                                     <div class="windDir">0</div>
+                                     <div class="windspeed">0</div>
+                                     <div class="sunrise">0</div>
+                                     <div class="sunset">0</div>
+                                     <div class="country">0</div>
+                                     <div class="locName">0</div>
+                            </div> 
+                        </div>
+                        
+
+            {{>footer}}
+    <script src="/js/weatherData.js"></script>    
+    <script src="/js/ui.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
